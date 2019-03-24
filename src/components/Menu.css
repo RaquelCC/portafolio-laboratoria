@@ -1,0 +1,54 @@
+.name-container, .menu-container {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    height: 20%;
+    width: 280px;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.name {
+    color: #ffffff;
+    text-shadow: -2px 2px black, -2px 0 black, 2px 0 black, 0 -2px black;
+    font-size: 40px;
+}
+
+.title {
+    color: #ffffff;
+    text-shadow: -2px 2px black, -2px 0 black, 2px 0 black, 0 -2px black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.menu {
+    color: #ffffff;
+    text-shadow: -2px 2px black, -2px 0 black, 2px 0 black, 0 -2px black;
+    font-size: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    vertical-align: middle;
+    display: flex;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    height: 40px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.menu-text {
+    display: inline-block;
+    margin: auto;
+    margin-left: 10px;
+
+}
+

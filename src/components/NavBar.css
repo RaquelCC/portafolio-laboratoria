@@ -1,0 +1,31 @@
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* show a hand cursor on hover; some argue that we
+    should keep the default arrow cursor for buttons */
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+  }
+
+.nav-bar {
+    position: absolute;
+    background-color: rgba(240, 235, 235, 0.6);
+    z-index: 10;
+    height: 10%;
+    min-height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-bar button {
+    list-style: none;
+    color: #ffffff;
+    text-shadow: -2px 2px black, -2px 0 black, 2px 0 black, 0 -2px black;
+    font-size: 20px;
+    margin: auto;
+}
