@@ -1,0 +1,15 @@
+.about-me-container {
+    display: flex;
+    background-color: #d5dcc3;
+    position: absolute;
+}
+
+.about-me {
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}

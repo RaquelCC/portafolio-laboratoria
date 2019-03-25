@@ -1,0 +1,5 @@
+.tools-container {
+    display: flex;
+    background-color: #d5dcc3;
+    position: absolute;
+}

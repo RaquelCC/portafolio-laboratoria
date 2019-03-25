@@ -9,7 +9,11 @@ button {
     cursor: pointer;
     margin: auto;
     display: flex;
-  }
+}
+
+button:focus {
+    outline: none;
+}
 
 .nav-bar {
     position: absolute;

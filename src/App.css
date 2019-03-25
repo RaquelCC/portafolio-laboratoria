@@ -3,7 +3,7 @@
   src: url("./fonts/The\ Wild\ Breath\ of\ Zelda.otf") format("opentype");
 }
 
-html, body, #root {
+html, body, #root, .App, div {
   height: 100%;
   width: 100%;
   font-family: 'Zelda';
@@ -19,4 +19,37 @@ html, body, #root {
   height: 100%;
   width: 100%;
   display: flex;
+}
+
+.menu-fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.menu-fade-appear.menu-fade-appear-active {
+  opacity: 1;
+  transition: opacity 600ms linear;
+}
+
+.menu-fade-exit {
+  opacity: 1;
+}
+
+.menu-fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.menu-fade-enter.menu-fade-enter-active {
+  opacity: 1;
+  transition: opacity 600ms linear;
+}
+
+.menu-fade-exit.menu-fade-exit-active {
+  opacity: 0;
+  transition: opacity 600ms linear;
+}
+
+.menu-fade-exit-done {
+  opacity: 0;
 }
