@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import './App.css';
 import Menu from './components/Menu';
 import NavBar from './components/NavBar';
-import { CSSTransition } from 'react-transition-group';
 import AboutMe from './components/AboutMe'
 import Tools from './components/Tools';
 
