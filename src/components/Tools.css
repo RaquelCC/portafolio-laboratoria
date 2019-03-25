@@ -2,4 +2,24 @@
     display: flex;
     background-color: #d5dcc3;
     position: absolute;
+    flex-flow: row;
+    flex-wrap: wrap;
 }
+
+.devicon-github-plain, .devicon-git-plain, .devicon-css3-plain, .devicon-html5-plain, .devicon-javascript-plain, .devicon-nodejs-plain, .devicon-react-original, .devicon-slack-plain, .devicon-visualstudio-plain {
+    margin: auto;
+    font-size: 70px;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.icons-container {
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    /* border: solid 1px black; */
+}
+
