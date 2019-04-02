@@ -9,6 +9,11 @@ button {
     cursor: pointer;
     margin: auto;
     display: flex;
+    height: 100%;
+    box-sizing: content-box; 
+    /* padding: 10px;
+    padding-right: 15px;  */
+    
 }
 
 button:focus {
@@ -32,4 +37,29 @@ button:focus {
     text-shadow: -2px 2px black, -2px 0 black, 2px 0 black, 0 -2px black;
     font-size: 20px;
     margin: auto;
+}
+
+.menu-selected {
+    /* background-color: rgba(255, 255, 250, 0.6); */
+    background-color: #d5dcc3;
+}
+
+.main-page2 {
+    width: 16.37%;
+}
+
+.about-me2 {
+    width: 18.96%;
+}
+
+.proyects2 {
+    width: 21.12%;
+}
+
+.tools2 {
+    width: 23.35%;
+}
+
+.contact-me2 {
+    width: 20.18%;
 }

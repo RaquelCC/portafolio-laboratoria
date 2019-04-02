@@ -5,6 +5,8 @@ import Menu from './components/Menu';
 import NavBar from './components/NavBar';
 import AboutMe from './components/AboutMe'
 import Tools from './components/Tools';
+import Snowflakes from './components/snowflakes';
+
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +15,9 @@ class App extends Component {
       activeMenu: 'mainPage',
     }
 
+
     this.handleChangeMenu = this.handleChangeMenu.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
 
   }
 
@@ -24,60 +28,70 @@ class App extends Component {
     })
   }
 
+  handleKeyPress(item) {
+
+    this.setState({
+      ...this.state,
+      activeMenu: item,
+    })
+
+  }
+
   render() {
     return (
 
       <div className="App">
-
+        <Snowflakes />
         {/* {this.state.activeMenu !== 'mainPage' && */}
-          <CSSTransition
-            in={this.state.activeMenu !== 'mainPage'}
-            appear={true}
-            timeout={600}
-            classNames="menu-fade"
-            unmountOnExit
-          >
-            <NavBar
-              activeMenu={this.state.activeMenu}
-              handleChangeMenu={this.handleChangeMenu}
-            />
-          </CSSTransition>
+        <CSSTransition
+          in={this.state.activeMenu !== 'mainPage'}
+          appear={true}
+          timeout={600}
+          classNames="menu-fade"
+          unmountOnExit
+        >
+          <NavBar
+            activeMenu={this.state.activeMenu}
+            handleChangeMenu={this.handleChangeMenu}
+          />
+        </CSSTransition>
         {/* } */}
 
 
         <CSSTransition
-            in={this.state.activeMenu === 'mainPage'}
-            appear={true}
-            timeout={600}
-            classNames="menu-fade"
-            unmountOnExit
-          >
+          in={this.state.activeMenu === 'mainPage'}
+          appear={true}
+          timeout={600}
+          classNames="menu-fade"
+          unmountOnExit
+        >
           <Menu
             activeMenu={this.state.activeMenu}
             handleChangeMenu={this.handleChangeMenu}
+            handleKeyPress={this.handleKeyPress}
           />
-          </CSSTransition>
+        </CSSTransition>
 
-          <CSSTransition
-            in={this.state.activeMenu === 'aboutMe'}
-            appear={true}
-            timeout={600}
-            classNames="menu-fade"
-            unmountOnExit
-          >
+        <CSSTransition
+          in={this.state.activeMenu === 'aboutMe'}
+          appear={true}
+          timeout={600}
+          classNames="menu-fade"
+          unmountOnExit
+        >
           <AboutMe
           />
-          </CSSTransition>
-          <CSSTransition
-            in={this.state.activeMenu === 'tools'}
-            appear={true}
-            timeout={600}
-            classNames="menu-fade"
-            unmountOnExit
-          >
+        </CSSTransition>
+        <CSSTransition
+          in={this.state.activeMenu === 'tools'}
+          appear={true}
+          timeout={600}
+          classNames="menu-fade"
+          unmountOnExit
+        >
           <Tools
           />
-          </CSSTransition>
+        </CSSTransition>
       </div>
 
     );
