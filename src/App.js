@@ -13,6 +13,8 @@ class App extends Component {
     super(props);
     this.state = {
       activeMenu: 'mainPage',
+      width: window.innerWidth,
+      heigth: window.innerHeight,
     }
 
 
@@ -50,9 +52,10 @@ class App extends Component {
           classNames="menu-fade"
           unmountOnExit
         >
-          <NavBar
+         <NavBar
             activeMenu={this.state.activeMenu}
             handleChangeMenu={this.handleChangeMenu}
+            width={this.state.width}
           />
         </CSSTransition>
         {/* } */}

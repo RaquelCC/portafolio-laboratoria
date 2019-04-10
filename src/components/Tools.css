@@ -6,14 +6,14 @@
     flex-wrap: wrap;
 }
 
-.devicon-github-plain, .devicon-git-plain, .devicon-css3-plain, .devicon-html5-plain, .devicon-javascript-plain, .devicon-nodejs-plain, .devicon-react-original, .devicon-slack-plain, .devicon-visualstudio-plain, .devicon-bootstrap-plain {
+.devicon-github-plain-wordmark, .devicon-git-plain-wordmark, .devicon-css3-plain-wordmark, .devicon-html5-plain-wordmark, .devicon-javascript-plain, .devicon-nodejs-plain-wordmark, .devicon-react-original-wordmark, .devicon-slack-plain-wordmark, .devicon-visualstudio-plain-wordmark, .devicon-bootstrap-plain-wordmark {
     margin: auto;
     font-size: 70px;
     color: #ffffff;
     padding: 20px;
 }
 
-.devicon-github-plain:hover, .devicon-git-plain:hover, .devicon-css3-plain:hover, .devicon-html5-plain:hover, .devicon-javascript-plain:hover, .devicon-nodejs-plain:hover, .devicon-react-original:hover, .devicon-slack-plain:hover, .devicon-visualstudio-plain:hover, .devicon-bootstrap-plain:hover {
+.devicon-github-plain-wordmark:hover, .devicon-git-plain-wordmark:hover, .devicon-css3-plain-wordmark:hover, .devicon-html5-plain-wordmark:hover, .devicon-javascript-plain:hover, .devicon-nodejs-plain-wordmark:hover, .devicon-react-original-wordmark:hover, .devicon-slack-plain-wordmark:hover, .devicon-visualstudio-plain-wordmark:hover, .devicon-bootstrap-plain-wordmark:hover {
     cursor: pointer;
 }
 

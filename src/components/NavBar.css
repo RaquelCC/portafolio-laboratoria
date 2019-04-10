@@ -46,20 +46,40 @@ button:focus {
 
 .main-page2 {
     width: 16.37%;
+    display: flex;
 }
 
 .about-me2 {
     width: 18.96%;
+    display: flex;
+
 }
 
 .proyects2 {
     width: 21.12%;
+    display: flex;
+
 }
 
 .tools2 {
     width: 23.35%;
+    display: flex;
+
 }
 
 .contact-me2 {
     width: 20.18%;
+    display: flex;
+
 }
+
+.menu-icon2 {
+    display: block;
+    height: 40px;
+    margin: auto;
+    /* margin-right: 10px; */
+}
+
+/* @media only screen and (max-width: 780px) {
+    .nav-bar 
+} */

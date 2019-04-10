@@ -6,11 +6,48 @@
 
 .about-me {
     font-family: 'Courier New', Courier, monospace;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: fit-content;
     margin: auto;
-    margin-right: 30px;
     font-weight: 700;
     font-size: 20px;
+    box-sizing: border-box;
+}
 
+.img-container {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.img-container img {
+    height: 150px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 780px) {
+    .about-me {
+        width: 80%;
+        margin: 0 auto auto auto;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-container {
+        width: 100%;
+        height: fit-content;
+        margin: auto auto 20px auto;
+        display: flex;
+    }
+    
+    .img-container img {
+        height: 150px;
+    }
 }
