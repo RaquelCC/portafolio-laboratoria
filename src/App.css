@@ -3,6 +3,10 @@
   src: url("./fonts/The\ Wild\ Breath\ of\ Zelda.otf") format("opentype");
 }
 
+html {
+  overflow: hidden;
+}
+
 html, body, #root, .App, div {
   height: 100%;
   width: 100%;

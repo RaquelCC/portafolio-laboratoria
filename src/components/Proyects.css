@@ -1,0 +1,158 @@
+.proyects-general-container {
+    display: flex;
+    background-color: #d5dcc3;
+    position: absolute;
+}
+
+.proyect-container {
+    margin: auto;
+    width: 30%;
+    height: 50%;
+    /* background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#cfcaaa;
+    background-size:16px 16px; */
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyect-container:hover {
+    /* background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#e0dcbf;
+    background-size:16px 16px; */
+    cursor: pointer;
+}
+
+.proyect-logo {
+    height: 50%;
+    border-radius: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+.proyect-title2 {
+    width: 30vh;
+    height: 30vh;
+    margin: auto;
+    border-radius: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    /* text-align: center; */
+}
+
+.proyect-title2 span {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.ban-igualdapp2 {
+    color: #0082D8;
+    background-color: #fafafa;
+    border: 2px solid #0082D8;
+}
+
+.ban-igualdapp2:hover {
+    Background-color: #0082D8;
+    color: #fafafa;
+    border: 2px solid #fafafa;
+}
+
+.bq {
+    background-color: #fffafa;
+    border: 3px solid #ff5d9e;
+}
+
+.bq2 {
+    background-color: #fffafa;
+    border: 2px solid #ff5d9e;
+    color: #ff5d9e;
+}
+
+.bq2:hover {
+    background-color: #ff5d9e;
+    border: 2px solid #fffafa;
+    color: #fffafa;
+}
+
+.more-info-proyect {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 24px;
+}
+
+.md-links {
+    border-radius: 100%;
+    background-color: #fafafa;
+    border: 3px solid black;
+    font-weight: 700;
+
+}
+
+.md-links2 {
+    border-radius: 10px;
+    background-color: #fafafa;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.github-button.md-links2:hover {
+    background-color: black;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+}
+
+.more-info-proyect.md-links2:hover {
+    background-color: black;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        overflow-y: scroll;
+    }
+
+    .proyects-general-container {
+        flex-direction: column;
+        padding-top: 50px;
+        /* padding-bottom: 50px; */
+    }
+
+    .proyect-container {
+        flex-direction: row;
+        margin: auto;
+        margin-bottom: 0;
+        width: fit-content;
+        height: 30%;
+    }
+
+    .proyect-title2 {
+        width: 25vh;
+        height: 25vh;
+        margin-right: 30px;
+    }
+
+    .proyect-logo {
+        height:  25vh;
+        padding: 0;
+        margin-right: 30px;
+    }
+}

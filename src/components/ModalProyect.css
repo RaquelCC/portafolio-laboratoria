@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+.outer-modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+.inner-modal {
+    height: 70%;
+    width: 50%;
+    background: #fff;
+    position: relative;
+    top: 15%;
+    left: 25%;
+    border-radius: 10px;
+    border: 2px solid #c9c9c9;
+    display: flex;
+    box-shadow: 4px 6px 19px 0px rgba(0,0,0,0.75);
+    flex-flow: row;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+}
+
+.proyect-technologies {
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.proyect-description {
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+
+}
+
+.proyect-logo2 {
+    height: 30%;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #fffafa;
+    border: 3px solid #ff5d9e;
+    margin: 30px auto auto 50px;
+}
+
+.proyect-buttons {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+}
+
+.demo-button, .github-button {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    width: 20%;
+    height: fit-content;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.burger-queen {
+    background-color: #fffafa;
+    border: 3px solid #ff5d9e;
+    color: #ff5d9e;
+    text-decoration: none;
+}
+
+.burger-queen:hover {
+    background-color: #ff5d9e;
+    border: 3px solid #fffafa;
+    color: #fffafa;
+}
+
+.proyect-gif {
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px auto auto auto;
+    max-height: 50%;
+}
+
+.proyect-gif-mobile {
+    width: 20%;
+    max-height: 50%;
+    margin: 10px auto auto auto;
+}
+
+.proyect-title {
+    width: 30vh;
+    height: 30vh;
+    margin: auto;
+    border-radius: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    /* text-align: center; */
+}
+
+.proyect-title span {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.ban-igualdapp {
+    background-color: #0082D8;
+    color: #fafafa;
+}
+
+.demo-button.ban-igualdapp, .github-button.ban-igualdapp {
+    background-color: #fafafa;
+    color: #0082D8;
+    border: 2px solid #0082D8;
+    text-decoration: none;
+}
+
+.demo-button.ban-igualdapp:hover, .github-button.ban-igualdapp:hover {
+    background-color: #0082D8;
+    color: #fafafa;
+}
+
+@media only screen and (max-width: 600px) {
+    .inner-modal {
+        width: 90%;
+        height: 80%;
+        top: 10%;
+        left: 5%;
+        overflow-y: scroll;
+    }
+
+    .proyect-logo2 {
+        height: 10%;
+        margin: 10px auto auto auto;
+    }
+
+    .proyect-gif {
+        width: 80%;
+        margin: auto;
+        max-height: 30%;
+    }
+
+    .proyect-gif-mobile {
+        width: 80%;
+        max-height: 80%;
+    }
+
+    .proyect-title {
+        height: 20vh;
+        width: 20vh;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .inner-modal {
+        width: 70%;
+        left: 15%;
+    }
+}

@@ -6,6 +6,8 @@ import NavBar from './components/NavBar';
 import AboutMe from './components/AboutMe'
 import Tools from './components/Tools';
 import Snowflakes from './components/snowflakes';
+import Proyects from './components/Proyects';
+import ModalProyect from './components/ModalProyect';
 
 
 class App extends Component {
@@ -15,11 +17,14 @@ class App extends Component {
       activeMenu: 'mainPage',
       width: window.innerWidth,
       heigth: window.innerHeight,
+      modalProyect: false,
     }
 
 
     this.handleChangeMenu = this.handleChangeMenu.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
 
   }
 
@@ -39,6 +44,20 @@ class App extends Component {
 
   }
 
+  openModal(proyect) {
+    this.setState({
+      ...this.state,
+      modalProyect: proyect,
+    })
+  }
+
+  closeModal() {
+    this.setState({
+      ...this.state,
+      modalProyect: false,
+    })
+  }
+
   render() {
     return (
 
@@ -52,13 +71,29 @@ class App extends Component {
           classNames="menu-fade"
           unmountOnExit
         >
-         <NavBar
+          <NavBar
             activeMenu={this.state.activeMenu}
             handleChangeMenu={this.handleChangeMenu}
             width={this.state.width}
           />
         </CSSTransition>
-        {/* } */}
+        {this.state.modalProyect &&
+          <ModalProyect
+            closeModal={this.closeModal}
+            proyect={this.state.modalProyect}
+          />}
+        <CSSTransition
+          in={this.state.activeMenu === 'proyects'}
+          appear={true}
+          timeout={600}
+          classNames="menu-fade"
+          unmountOnExit
+        >
+          <Proyects
+            openModal={this.openModal}
+            proyect={this.state.proyect}
+          />
+        </CSSTransition>
 
 
         <CSSTransition
