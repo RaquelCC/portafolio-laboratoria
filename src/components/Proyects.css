@@ -126,13 +126,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-    html {
+    .App {
         overflow-y: scroll;
     }
 
     .proyects-general-container {
         flex-direction: column;
-        padding-top: 50px;
+        /* padding-top: 50px; */
         /* padding-bottom: 50px; */
     }
 
@@ -142,6 +142,7 @@
         margin-bottom: 0;
         width: fit-content;
         height: 30%;
+        padding: 10px 0;
     }
 
     .proyect-title2 {

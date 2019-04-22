@@ -90,6 +90,7 @@ class App extends Component {
           unmountOnExit
         >
           <Proyects
+            width={this.state.width}
             openModal={this.openModal}
             proyect={this.state.proyect}
           />

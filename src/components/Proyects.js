@@ -8,6 +8,7 @@ import mdLinks from '../img/md-links.png';
 function Proyects(props) {
     return (
         <div className="proyects-general-container">
+        {props.width < 600 && <div className="proyect-container"></div>}
         <div className="proyect-container" onClick={()=> props.openModal({
             name: "burger-queen",
             proyectLogo: BQLogo,
